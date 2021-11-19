@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "задача-style",
+      "appliesTo": "style.css",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "задача-git",
+      "appliesTo": "/",
+      "type": "launch"
+    }
+  ]
+}

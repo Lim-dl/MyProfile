@@ -1,24 +1,33 @@
-header {
-  background-color: #fff;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-h1 {
-  color: #5f015f;
+input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+
+	&:focus + label {
+		color: black;
+		background-color: wheat;
+	}
+}
+label {
+	position: relative;
+	display: block;
+	cursor: pointer;
 }
 
-body {
-  margin: 0px;
-  font-size: 20px;
+section {
+	height: 0;
+	transition: .6s all;
+	overflow: hidden;
 }
 
-body div {
-  font-size: 10px;
-}
-
-.red {
-  color: red;
-}
-
-img {
-  width: 100%;
+#toggle1:checked ~ #content1,
+#toggle2:checked ~ #content2,
+#toggle3:checked ~ #content3,
+#toggle4:checked ~ #content4 {
+	height: 150px;
 }

@@ -1,0 +1,34 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+ }
+ 
+ input[type="checkbox"] {
+	 position: absolute;
+	 opacity: 0;
+ 
+	 &:focus + label {
+		 color: black;
+		 background-color: wheat;
+	 }
+ }
+ label {
+	 position: relative;
+	 display: block;
+	 cursor: pointer;
+ }
+ 
+ section {
+	 height: 0;
+	 transition: .3s all;
+	 overflow: hidden;
+ }
+ 
+ #toggle1:checked ~ #content1,
+ #toggle2:checked ~ #content2,
+ #toggle3:checked ~ #content3,
+ #toggle4:checked ~ #content4 {
+	 height: 150px;
+ }
+ 

@@ -1,34 +1,68 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	height: 100%;
- }
- 
- input[type="checkbox"] {
-	 position: absolute;
-	 opacity: 0;
- 
-	 &:focus + label {
-		 color: black;
-		 background-color: wheat;
-	 }
- }
- label {
-	 position: relative;
-	 display: block;
-	 cursor: pointer;
- }
- 
- section {
-	 height: 0;
-	 transition: .3s all;
-	 overflow: hidden;
- }
- 
- #toggle1:checked ~ #content1,
- #toggle2:checked ~ #content2,
- #toggle3:checked ~ #content3,
- #toggle4:checked ~ #content4 {
-	 height: 150px;
- }
- 
+	width: 100%;
+	background: linear-gradient(rgb(129, 0, 129), rgb(52, 0, 53)) no-repeat fixed;
+}
+body{
+	display: block;
+	margin-top: 7vh;
+	margin-bottom: 7vh;
+}
+.content{
+	margin: 0 auto;
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+	width: 75%;
+	background: #fff;
+	border-radius: 20px;
+	padding: 15px 30px 15px 30px;
+}
+
+h2{
+	padding:0px;
+}
+ul.allCursor{
+	margin: 0;
+	padding: 0;
+}
+ul.allCursor li{
+	display: inline-block;
+	border: 1px solid rgb(87, 0, 65);
+	width: 12%;
+	height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 5px;
+}
+
+input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+}
+
+input[type="checkbox"]:focus + label {
+	color: black;
+	background-color: wheat;
+}
+
+label {
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
+
+section {
+	height: 0;
+	transition: .3s all;
+	overflow: hidden;
+}
+
+#toggle1:checked ~ #content1,
+#toggle2:checked ~ #content2,
+#toggle3:checked ~ #content3,
+#toggle4:checked ~ #content4 {
+	height: 150px;
+}
+
+
